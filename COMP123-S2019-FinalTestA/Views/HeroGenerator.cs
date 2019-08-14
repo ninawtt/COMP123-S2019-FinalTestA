@@ -132,10 +132,18 @@ namespace COMP123_S2019_FinalTestA.Views
                     File.Open(CharacterOpenFileDialog.FileName, FileMode.Open)))
                 {
                     // read stuff from the file into the Student object
-                    //Program.student.id = int.Parse(inputStream.ReadLine());
-                    //Program.student.StudentID = inputStream.ReadLine();
-                    //Program.student.FirstName = inputStream.ReadLine();
-                    //Program.student.LastName = inputStream.ReadLine();
+
+                    Program.character.FirstName = inputStream.ReadLine();
+                    Program.character.LastName = inputStream.ReadLine();
+                    Program.character.Fighting = inputStream.ReadLine();
+                    Program.character.Agility = inputStream.ReadLine();
+                    Program.character.Reason = inputStream.ReadLine();
+                    Program.character.Endurance = inputStream.ReadLine();
+                    Program.character.Intuition = inputStream.ReadLine();
+                    Program.character.Psyche = inputStream.ReadLine();
+                    Program.character.Popularity = inputStream.ReadLine();
+
+
 
                     // cleanup
                     inputStream.Close();
@@ -167,10 +175,15 @@ namespace COMP123_S2019_FinalTestA.Views
                     File.Open(CharacterSaveFileDialog.FileName, FileMode.Create)))
                 {
                     // write stuff to the file
-                    //outputStream.WriteLine(Program.student.id.ToString());
-                    //outputStream.WriteLine(Program.student.StudentID);
-                    //outputStream.WriteLine(Program.student.FirstName);
-                    //outputStream.WriteLine(Program.student.LastName);
+                    outputStream.WriteLine(Program.character.FirstName);
+                    outputStream.WriteLine(Program.character.LastName);
+                    outputStream.WriteLine(Program.character.Fighting);
+                    outputStream.WriteLine(Program.character.Agility);
+                    outputStream.WriteLine(Program.character.Reason);
+                    outputStream.WriteLine(Program.character.Endurance);
+                    outputStream.WriteLine(Program.character.Intuition);
+                    outputStream.WriteLine(Program.character.Psyche);
+                    outputStream.WriteLine(Program.character.Popularity);
 
                     // cleanup
                     outputStream.Close();
@@ -289,6 +302,7 @@ namespace COMP123_S2019_FinalTestA.Views
         {
             GeneratePowers();
         }
-
+        
+        
     }
 }
