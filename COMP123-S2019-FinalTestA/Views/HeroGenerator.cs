@@ -72,6 +72,7 @@ namespace COMP123_S2019_FinalTestA.Views
         {
             GenerateNames();
         }
+        
 
         /// <summary>
         /// This is the event handler for the BackButton Click event
@@ -190,6 +191,45 @@ namespace COMP123_S2019_FinalTestA.Views
             Program.aboutForm.ShowDialog();
         }
 
-        
+        /// <summary>
+        /// This is the event handler for the GenerateAbilitiesButton Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GenerateAbilitiesButton_Click(object sender, EventArgs e)
+        {
+            // Create a int list to save eight random numbers
+            List<int> randomNumbers = new List<int>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                int number;
+
+                do number = new Random().Next(10, 51);
+                while (randomNumbers.Contains(number));
+
+                randomNumbers.Add(number);
+            }
+
+            // Assign each random number to the relative data label
+            FightingDataLabel.Text = randomNumbers[0].ToString();
+            AgilityDataLabel.Text = randomNumbers[1].ToString();
+            StrengthDataLabel.Text = randomNumbers[2].ToString();
+            EnduranceDataLabel.Text = randomNumbers[3].ToString();
+            ReasonDataLabel.Text = randomNumbers[4].ToString();
+            IntuitionDataLabel.Text = randomNumbers[5].ToString();
+            PsycheDataLabel.Text = randomNumbers[6].ToString();
+            PopularityDataLabel.Text = randomNumbers[7].ToString();
+
+            // Store the data into character container
+            Program.character.Fighting = FightingDataLabel.Text;
+            Program.character.Agility = AgilityDataLabel.Text;
+            Program.character.Strength = StrengthDataLabel.Text;
+            Program.character.Endurance = EnduranceDataLabel.Text;
+            Program.character.Reason = ReasonDataLabel.Text;
+            Program.character.Intuition = IntuitionDataLabel.Text;
+            Program.character.Psyche = PsycheDataLabel.Text;
+            Program.character.Popularity = PopularityDataLabel.Text;
+        }
     }
 }

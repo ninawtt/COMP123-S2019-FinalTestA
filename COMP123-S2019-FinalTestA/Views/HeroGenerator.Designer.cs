@@ -201,16 +201,13 @@
             this.AbilityTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.AbilityTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.AbilityTableLayoutPanel.Controls.Add(this.PhysicalAbilitiesLabel, 0, 0);
-            this.AbilityTableLayoutPanel.Controls.Add(this.ReasonDataLabel, 3, 2);
             this.AbilityTableLayoutPanel.Controls.Add(this.MentalAbilitiesLabel, 2, 0);
             this.AbilityTableLayoutPanel.Controls.Add(this.PopularityLabel, 2, 4);
-            this.AbilityTableLayoutPanel.Controls.Add(this.IntuitionDataLabel, 3, 1);
             this.AbilityTableLayoutPanel.Controls.Add(this.FightingLabel, 0, 1);
             this.AbilityTableLayoutPanel.Controls.Add(this.AgilityLabel, 0, 2);
             this.AbilityTableLayoutPanel.Controls.Add(this.PsycheLabel, 2, 3);
             this.AbilityTableLayoutPanel.Controls.Add(this.StrengthLabel, 0, 3);
             this.AbilityTableLayoutPanel.Controls.Add(this.EnduranceLabel, 0, 4);
-            this.AbilityTableLayoutPanel.Controls.Add(this.IntuitionLabel, 2, 2);
             this.AbilityTableLayoutPanel.Controls.Add(this.FightingDataLabel, 1, 1);
             this.AbilityTableLayoutPanel.Controls.Add(this.AgilityDataLabel, 1, 2);
             this.AbilityTableLayoutPanel.Controls.Add(this.ReasonLabel, 2, 1);
@@ -219,6 +216,9 @@
             this.AbilityTableLayoutPanel.Controls.Add(this.PopularityDataLabel, 3, 4);
             this.AbilityTableLayoutPanel.Controls.Add(this.PsycheDataLabel, 3, 3);
             this.AbilityTableLayoutPanel.Controls.Add(this.GenerateAbilitiesButton, 2, 6);
+            this.AbilityTableLayoutPanel.Controls.Add(this.ReasonDataLabel, 3, 1);
+            this.AbilityTableLayoutPanel.Controls.Add(this.IntuitionDataLabel, 3, 2);
+            this.AbilityTableLayoutPanel.Controls.Add(this.IntuitionLabel, 2, 2);
             this.AbilityTableLayoutPanel.Location = new System.Drawing.Point(12, 23);
             this.AbilityTableLayoutPanel.Name = "AbilityTableLayoutPanel";
             this.AbilityTableLayoutPanel.RowCount = 7;
@@ -252,7 +252,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ReasonDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ReasonDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReasonDataLabel.Location = new System.Drawing.Point(561, 100);
+            this.ReasonDataLabel.Location = new System.Drawing.Point(561, 50);
             this.ReasonDataLabel.Name = "ReasonDataLabel";
             this.ReasonDataLabel.Size = new System.Drawing.Size(182, 50);
             this.ReasonDataLabel.TabIndex = 14;
@@ -290,7 +290,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.IntuitionDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.IntuitionDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IntuitionDataLabel.Location = new System.Drawing.Point(561, 50);
+            this.IntuitionDataLabel.Location = new System.Drawing.Point(561, 100);
             this.IntuitionDataLabel.Name = "IntuitionDataLabel";
             this.IntuitionDataLabel.Size = new System.Drawing.Size(182, 50);
             this.IntuitionDataLabel.TabIndex = 16;
@@ -470,6 +470,7 @@
             this.GenerateAbilitiesButton.TabIndex = 23;
             this.GenerateAbilitiesButton.Text = "Generate Abilities";
             this.GenerateAbilitiesButton.UseVisualStyleBackColor = true;
+            this.GenerateAbilitiesButton.Click += new System.EventHandler(this.GenerateAbilitiesButton_Click);
             // 
             // PowersPage
             // 
