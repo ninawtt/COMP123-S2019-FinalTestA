@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP123_S2019_FinalTestA.Objects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -231,5 +232,63 @@ namespace COMP123_S2019_FinalTestA.Views
             Program.character.Psyche = PsycheDataLabel.Text;
             Program.character.Popularity = PopularityDataLabel.Text;
         }
+
+        
+        /// <summary>
+        /// This is the method to generate hero name randomly
+        /// </summary>
+        private void GeneratePowers()
+        {
+            string PowerFile = @"..\..\Data\powers.txt";
+
+            var ReadPowers = File.ReadAllLines(PowerFile);
+            List<string> PowerList = ReadPowers.ToList();
+            int PowerEndNumber = ReadPowers.Length;
+
+            // Create a int list to save four random numbers
+            List<int> randomNumbers = new List<int>();
+
+            for (int i = 0; i < 4; i++)
+            {
+                int number;
+
+                do number = new Random().Next(0, PowerEndNumber);
+                while (randomNumbers.Contains(number));
+
+                randomNumbers.Add(number);
+            }
+
+            // Assign each random number to the relative data label
+            Power1Label.Text = PowerList[0];
+            Power2Label.Text = PowerList[1];
+            Power3Label.Text = PowerList[2];
+            Power4Label.Text = PowerList[3];
+
+            Power p1 = new Power();
+            p1.Name = Power1Label.Text;
+            Power p2 = new Power();
+            p2.Name = Power2Label.Text;
+            Power p3 = new Power();
+            p3.Name = Power3Label.Text;
+            Power p4 = new Power();
+            p4.Name = Power4Label.Text;
+
+            // Store the data into character container
+            Program.character.Powers.Add(p1);
+            Program.character.Powers.Add(p2);
+            Program.character.Powers.Add(p3);
+            Program.character.Powers.Add(p4);
+        }
+        
+        /// <summary>
+        ///  This is the event handler for the GeneratePowersButton Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GeneratePowersButton_Click(object sender, EventArgs e)
+        {
+            GeneratePowers();
+        }
+
     }
 }
