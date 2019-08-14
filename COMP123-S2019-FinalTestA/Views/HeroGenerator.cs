@@ -99,6 +99,16 @@ namespace COMP123_S2019_FinalTestA.Views
             {
                 MainTabControl.SelectedIndex++;
             }
+
+            if (MainTabControl.SelectedIndex == 3)
+            {
+                CharacterNameDataLabel.Text = Program.character.HeroName;
+                CharacterFirstNameDataLabel.Text = Program.character.FirstName;
+                CharacterLastNameDataLabel.Text = Program.character.LastName;
+                CharacterFightingLabelLabel.Text = Program.character.Fighting;
+                CharacterAgiligyDataLabel.Text = Program.character.Agility;
+            }
+
         }
 
         /// <summary>
