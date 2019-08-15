@@ -105,8 +105,18 @@ namespace COMP123_S2019_FinalTestA.Views
                 CharacterNameDataLabel.Text = Program.character.HeroName;
                 CharacterFirstNameDataLabel.Text = Program.character.FirstName;
                 CharacterLastNameDataLabel.Text = Program.character.LastName;
-                CharacterFightingLabelLabel.Text = Program.character.Fighting;
+                CharacterFightingDataLabel.Text = Program.character.Fighting;
                 CharacterAgiligyDataLabel.Text = Program.character.Agility;
+                CharacterStrengthDataLabel.Text = Program.character.Strength;
+                CharacterEnduranceDataLabel.Text = Program.character.Endurance;
+                CharacterReasonDataLabel.Text = Program.character.Reason;
+                CharacterIntuitionDataLabel.Text = Program.character.Intuition;
+                CharacterPsycheDataLabel.Text = Program.character.Psyche;
+                CharacterPopularDataLabel.Text = Program.character.Popularity;
+                CharacterPower1DataLabel.Text = Program.character.Powers[0].Name;
+                CharacterPower2DataLabel.Text = Program.character.Powers[1].Name;
+                CharacterPower3DataLabel.Text = Program.character.Powers[2].Name;
+                CharacterPower4DataLabel.Text = Program.character.Powers[3].Name;
             }
 
         }
@@ -282,10 +292,10 @@ namespace COMP123_S2019_FinalTestA.Views
             }
 
             // Assign each random number to the relative data label
-            Power1Label.Text = PowerList[0];
-            Power2Label.Text = PowerList[1];
-            Power3Label.Text = PowerList[2];
-            Power4Label.Text = PowerList[3];
+            Power1Label.Text = PowerList[randomNumbers[0]];
+            Power2Label.Text = PowerList[randomNumbers[1]];
+            Power3Label.Text = PowerList[randomNumbers[2]];
+            Power4Label.Text = PowerList[randomNumbers[3]];
 
             Power p1 = new Power();
             p1.Name = Power1Label.Text;
@@ -312,7 +322,5 @@ namespace COMP123_S2019_FinalTestA.Views
         {
             GeneratePowers();
         }
-        
-        
     }
 }

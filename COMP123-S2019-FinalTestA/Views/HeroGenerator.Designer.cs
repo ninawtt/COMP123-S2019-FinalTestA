@@ -69,30 +69,24 @@
             this.Power4Label = new System.Windows.Forms.Label();
             this.CharacterSheet = new System.Windows.Forms.TabPage();
             this.CharaterTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.CharacterReasonDataLabel = new System.Windows.Forms.Label();
-            this.CharacterReasonLabel = new System.Windows.Forms.Label();
-            this.CharacterFightingLabelLabel = new System.Windows.Forms.Label();
-            this.CharacterFightingLabel = new System.Windows.Forms.Label();
-            this.CharacterEnduranceDataLabel = new System.Windows.Forms.Label();
-            this.CharacterEnduranceLabel = new System.Windows.Forms.Label();
-            this.CharacterLastNameDataLabel = new System.Windows.Forms.Label();
-            this.CharacterLastNameLabel = new System.Windows.Forms.Label();
-            this.CharacterStrengthDataLabel = new System.Windows.Forms.Label();
-            this.CharacterStrengthLabel = new System.Windows.Forms.Label();
-            this.CharacterFirstNameDataLabel = new System.Windows.Forms.Label();
-            this.CharacterFirstNameLabel = new System.Windows.Forms.Label();
-            this.CharacterNameDataLabel = new System.Windows.Forms.Label();
+            this.CharacterFightingDataLabel = new System.Windows.Forms.Label();
+            this.CharacterPower1Label = new System.Windows.Forms.Label();
+            this.CharacterPower1DataLabel = new System.Windows.Forms.Label();
             this.CharacterNameLabel = new System.Windows.Forms.Label();
-            this.CharacterAgiligyDataLabel = new System.Windows.Forms.Label();
+            this.CharacterFirstNameLabel = new System.Windows.Forms.Label();
+            this.CharacterFirstNameDataLabel = new System.Windows.Forms.Label();
             this.CharacterAgiligyLabel = new System.Windows.Forms.Label();
-            this.CharacterIntuitionLabel = new System.Windows.Forms.Label();
-            this.CharacterIntuitionDataLabel = new System.Windows.Forms.Label();
+            this.CharacterLastNameLabel = new System.Windows.Forms.Label();
+            this.CharacterPopularLabel = new System.Windows.Forms.Label();
             this.CharacterPsycheLabel = new System.Windows.Forms.Label();
             this.CharacterPsycheDataLabel = new System.Windows.Forms.Label();
-            this.CharacterPopularLabel = new System.Windows.Forms.Label();
-            this.CharacterPowerLabel = new System.Windows.Forms.Label();
-            this.CharacterPopularDataLabel = new System.Windows.Forms.Label();
-            this.CharacterPowerDataLabel = new System.Windows.Forms.Label();
+            this.CharacterIntuitionLabel = new System.Windows.Forms.Label();
+            this.CharacterReasonLabel = new System.Windows.Forms.Label();
+            this.CharacterReasonDataLabel = new System.Windows.Forms.Label();
+            this.CharacterEnduranceLabel = new System.Windows.Forms.Label();
+            this.CharacterStrengthLabel = new System.Windows.Forms.Label();
+            this.CharacterStrengthDataLabel = new System.Windows.Forms.Label();
+            this.CharacterFightingLabel = new System.Windows.Forms.Label();
             this.HeroToolStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -113,6 +107,20 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.CharacterOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.CharacterSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.AbilitiesTitleLabel = new System.Windows.Forms.Label();
+            this.PowerTitleLabel = new System.Windows.Forms.Label();
+            this.CharacterPower2Label = new System.Windows.Forms.Label();
+            this.CharacterPower3Label = new System.Windows.Forms.Label();
+            this.CharacterPower3DataLabel = new System.Windows.Forms.Label();
+            this.CharacterPower4Label = new System.Windows.Forms.Label();
+            this.CharacterPower4DataLabel = new System.Windows.Forms.Label();
+            this.CharacterPower2DataLabel = new System.Windows.Forms.Label();
+            this.CharacterLastNameDataLabel = new System.Windows.Forms.Label();
+            this.CharacterAgiligyDataLabel = new System.Windows.Forms.Label();
+            this.CharacterEnduranceDataLabel = new System.Windows.Forms.Label();
+            this.CharacterIntuitionDataLabel = new System.Windows.Forms.Label();
+            this.CharacterPopularDataLabel = new System.Windows.Forms.Label();
+            this.CharacterNameDataLabel = new System.Windows.Forms.Label();
             this.MainTabControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.AbilitiesPage.SuspendLayout();
@@ -135,7 +143,7 @@
             this.MainTabControl.Location = new System.Drawing.Point(0, 0);
             this.MainTabControl.Name = "MainTabControl";
             this.MainTabControl.SelectedIndex = 0;
-            this.MainTabControl.Size = new System.Drawing.Size(974, 460);
+            this.MainTabControl.Size = new System.Drawing.Size(974, 641);
             this.MainTabControl.TabIndex = 0;
             // 
             // IdentityPage
@@ -149,7 +157,7 @@
             this.IdentityPage.Controls.Add(this.HeroNameLabel);
             this.IdentityPage.Location = new System.Drawing.Point(4, 51);
             this.IdentityPage.Name = "IdentityPage";
-            this.IdentityPage.Size = new System.Drawing.Size(1166, 405);
+            this.IdentityPage.Size = new System.Drawing.Size(966, 586);
             this.IdentityPage.TabIndex = 2;
             this.IdentityPage.Text = "Identity";
             this.IdentityPage.UseVisualStyleBackColor = true;
@@ -223,7 +231,7 @@
             this.AbilitiesPage.Location = new System.Drawing.Point(4, 51);
             this.AbilitiesPage.Name = "AbilitiesPage";
             this.AbilitiesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AbilitiesPage.Size = new System.Drawing.Size(1166, 405);
+            this.AbilitiesPage.Size = new System.Drawing.Size(966, 586);
             this.AbilitiesPage.TabIndex = 0;
             this.AbilitiesPage.Text = "Abilities";
             this.AbilitiesPage.UseVisualStyleBackColor = true;
@@ -513,7 +521,7 @@
             this.PowersPage.Location = new System.Drawing.Point(4, 51);
             this.PowersPage.Name = "PowersPage";
             this.PowersPage.Padding = new System.Windows.Forms.Padding(3);
-            this.PowersPage.Size = new System.Drawing.Size(1166, 405);
+            this.PowersPage.Size = new System.Drawing.Size(966, 586);
             this.PowersPage.TabIndex = 1;
             this.PowersPage.Text = "Powers";
             this.PowersPage.UseVisualStyleBackColor = true;
@@ -633,215 +641,102 @@
             this.CharacterSheet.Location = new System.Drawing.Point(4, 51);
             this.CharacterSheet.Name = "CharacterSheet";
             this.CharacterSheet.Padding = new System.Windows.Forms.Padding(3);
-            this.CharacterSheet.Size = new System.Drawing.Size(966, 405);
+            this.CharacterSheet.Size = new System.Drawing.Size(966, 586);
             this.CharacterSheet.TabIndex = 3;
             this.CharacterSheet.Text = "Character Sheet";
             this.CharacterSheet.UseVisualStyleBackColor = true;
             // 
             // CharaterTableLayoutPanel
             // 
-            this.CharaterTableLayoutPanel.ColumnCount = 6;
-            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterReasonDataLabel, 3, 3);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterReasonLabel, 2, 3);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFightingLabelLabel, 1, 3);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFightingLabel, 0, 3);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterEnduranceDataLabel, 3, 2);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterEnduranceLabel, 2, 2);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterLastNameDataLabel, 1, 2);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterLastNameLabel, 0, 2);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterStrengthDataLabel, 3, 1);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterStrengthLabel, 2, 1);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFirstNameDataLabel, 1, 1);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFirstNameLabel, 0, 1);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterNameDataLabel, 1, 0);
+            this.CharaterTableLayoutPanel.ColumnCount = 4;
+            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CharaterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.CharaterTableLayoutPanel.Controls.Add(this.CharacterNameLabel, 0, 0);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterAgiligyDataLabel, 3, 0);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterAgiligyLabel, 2, 0);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterIntuitionLabel, 4, 0);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterIntuitionDataLabel, 5, 0);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPsycheLabel, 4, 1);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPsycheDataLabel, 5, 1);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPopularLabel, 4, 2);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPowerLabel, 4, 3);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPopularDataLabel, 5, 2);
-            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPowerDataLabel, 5, 3);
-            this.CharaterTableLayoutPanel.Location = new System.Drawing.Point(18, 104);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFirstNameLabel, 0, 1);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFirstNameDataLabel, 1, 1);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPopularLabel, 2, 6);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPopularDataLabel, 3, 6);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPsycheLabel, 0, 6);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPsycheDataLabel, 1, 6);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterIntuitionLabel, 2, 5);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterIntuitionDataLabel, 3, 5);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterReasonLabel, 0, 5);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterReasonDataLabel, 1, 5);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterEnduranceLabel, 2, 4);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterEnduranceDataLabel, 3, 4);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFightingLabel, 0, 3);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterFightingDataLabel, 1, 3);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterStrengthLabel, 0, 4);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterStrengthDataLabel, 1, 4);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterAgiligyLabel, 2, 3);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterAgiligyDataLabel, 3, 3);
+            this.CharaterTableLayoutPanel.Controls.Add(this.AbilitiesTitleLabel, 0, 2);
+            this.CharaterTableLayoutPanel.Controls.Add(this.PowerTitleLabel, 0, 7);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterLastNameLabel, 2, 1);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterLastNameDataLabel, 3, 1);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower1Label, 0, 8);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower1DataLabel, 1, 8);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower2Label, 2, 8);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower2DataLabel, 3, 8);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower3Label, 0, 9);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower3DataLabel, 1, 9);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower4Label, 2, 9);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterPower4DataLabel, 3, 9);
+            this.CharaterTableLayoutPanel.Controls.Add(this.CharacterNameDataLabel, 2, 0);
+            this.CharaterTableLayoutPanel.Location = new System.Drawing.Point(9, 132);
             this.CharaterTableLayoutPanel.Name = "CharaterTableLayoutPanel";
-            this.CharaterTableLayoutPanel.RowCount = 4;
-            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.CharaterTableLayoutPanel.Size = new System.Drawing.Size(786, 258);
+            this.CharaterTableLayoutPanel.RowCount = 10;
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.CharaterTableLayoutPanel.Size = new System.Drawing.Size(940, 421);
             this.CharaterTableLayoutPanel.TabIndex = 2;
             // 
-            // CharacterReasonDataLabel
+            // CharacterFightingDataLabel
             // 
-            this.CharacterReasonDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterFightingDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterReasonDataLabel.AutoSize = true;
-            this.CharacterReasonDataLabel.Location = new System.Drawing.Point(393, 192);
-            this.CharacterReasonDataLabel.Name = "CharacterReasonDataLabel";
-            this.CharacterReasonDataLabel.Size = new System.Drawing.Size(124, 66);
-            this.CharacterReasonDataLabel.TabIndex = 15;
-            this.CharacterReasonDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterFightingDataLabel.AutoSize = true;
+            this.CharacterFightingDataLabel.Location = new System.Drawing.Point(238, 126);
+            this.CharacterFightingDataLabel.Name = "CharacterFightingDataLabel";
+            this.CharacterFightingDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterFightingDataLabel.TabIndex = 13;
+            this.CharacterFightingDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterReasonLabel
+            // CharacterPower1Label
             // 
-            this.CharacterReasonLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterPower1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterReasonLabel.AutoSize = true;
-            this.CharacterReasonLabel.Location = new System.Drawing.Point(263, 192);
-            this.CharacterReasonLabel.Name = "CharacterReasonLabel";
-            this.CharacterReasonLabel.Size = new System.Drawing.Size(124, 66);
-            this.CharacterReasonLabel.TabIndex = 14;
-            this.CharacterReasonLabel.Text = "Reason";
-            this.CharacterReasonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterPower1Label.AutoSize = true;
+            this.CharacterPower1Label.Location = new System.Drawing.Point(3, 336);
+            this.CharacterPower1Label.Name = "CharacterPower1Label";
+            this.CharacterPower1Label.Size = new System.Drawing.Size(229, 42);
+            this.CharacterPower1Label.TabIndex = 21;
+            this.CharacterPower1Label.Text = "Power 1";
+            this.CharacterPower1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterFightingLabelLabel
+            // CharacterPower1DataLabel
             // 
-            this.CharacterFightingLabelLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterPower1DataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterFightingLabelLabel.AutoSize = true;
-            this.CharacterFightingLabelLabel.Location = new System.Drawing.Point(133, 192);
-            this.CharacterFightingLabelLabel.Name = "CharacterFightingLabelLabel";
-            this.CharacterFightingLabelLabel.Size = new System.Drawing.Size(124, 66);
-            this.CharacterFightingLabelLabel.TabIndex = 13;
-            this.CharacterFightingLabelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterFightingLabel
-            // 
-            this.CharacterFightingLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterFightingLabel.AutoSize = true;
-            this.CharacterFightingLabel.Location = new System.Drawing.Point(3, 192);
-            this.CharacterFightingLabel.Name = "CharacterFightingLabel";
-            this.CharacterFightingLabel.Size = new System.Drawing.Size(124, 66);
-            this.CharacterFightingLabel.TabIndex = 12;
-            this.CharacterFightingLabel.Text = "Fighting";
-            this.CharacterFightingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterEnduranceDataLabel
-            // 
-            this.CharacterEnduranceDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterEnduranceDataLabel.AutoSize = true;
-            this.CharacterEnduranceDataLabel.Location = new System.Drawing.Point(393, 128);
-            this.CharacterEnduranceDataLabel.Name = "CharacterEnduranceDataLabel";
-            this.CharacterEnduranceDataLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterEnduranceDataLabel.TabIndex = 11;
-            this.CharacterEnduranceDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterEnduranceLabel
-            // 
-            this.CharacterEnduranceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterEnduranceLabel.AutoSize = true;
-            this.CharacterEnduranceLabel.Location = new System.Drawing.Point(263, 128);
-            this.CharacterEnduranceLabel.Name = "CharacterEnduranceLabel";
-            this.CharacterEnduranceLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterEnduranceLabel.TabIndex = 10;
-            this.CharacterEnduranceLabel.Text = "Endurance";
-            this.CharacterEnduranceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterLastNameDataLabel
-            // 
-            this.CharacterLastNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterLastNameDataLabel.AutoSize = true;
-            this.CharacterLastNameDataLabel.Location = new System.Drawing.Point(133, 128);
-            this.CharacterLastNameDataLabel.Name = "CharacterLastNameDataLabel";
-            this.CharacterLastNameDataLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterLastNameDataLabel.TabIndex = 9;
-            this.CharacterLastNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterLastNameLabel
-            // 
-            this.CharacterLastNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterLastNameLabel.AutoSize = true;
-            this.CharacterLastNameLabel.Location = new System.Drawing.Point(3, 128);
-            this.CharacterLastNameLabel.Name = "CharacterLastNameLabel";
-            this.CharacterLastNameLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterLastNameLabel.TabIndex = 8;
-            this.CharacterLastNameLabel.Text = "Last Name";
-            this.CharacterLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterStrengthDataLabel
-            // 
-            this.CharacterStrengthDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterStrengthDataLabel.AutoSize = true;
-            this.CharacterStrengthDataLabel.Location = new System.Drawing.Point(393, 64);
-            this.CharacterStrengthDataLabel.Name = "CharacterStrengthDataLabel";
-            this.CharacterStrengthDataLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterStrengthDataLabel.TabIndex = 7;
-            this.CharacterStrengthDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterStrengthLabel
-            // 
-            this.CharacterStrengthLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterStrengthLabel.AutoSize = true;
-            this.CharacterStrengthLabel.Location = new System.Drawing.Point(263, 64);
-            this.CharacterStrengthLabel.Name = "CharacterStrengthLabel";
-            this.CharacterStrengthLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterStrengthLabel.TabIndex = 6;
-            this.CharacterStrengthLabel.Text = "Strength";
-            this.CharacterStrengthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterFirstNameDataLabel
-            // 
-            this.CharacterFirstNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterFirstNameDataLabel.AutoSize = true;
-            this.CharacterFirstNameDataLabel.Location = new System.Drawing.Point(133, 64);
-            this.CharacterFirstNameDataLabel.Name = "CharacterFirstNameDataLabel";
-            this.CharacterFirstNameDataLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterFirstNameDataLabel.TabIndex = 5;
-            this.CharacterFirstNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterFirstNameLabel
-            // 
-            this.CharacterFirstNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterFirstNameLabel.AutoSize = true;
-            this.CharacterFirstNameLabel.Location = new System.Drawing.Point(3, 64);
-            this.CharacterFirstNameLabel.Name = "CharacterFirstNameLabel";
-            this.CharacterFirstNameLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterFirstNameLabel.TabIndex = 4;
-            this.CharacterFirstNameLabel.Text = "First Name";
-            this.CharacterFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CharacterNameDataLabel
-            // 
-            this.CharacterNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterNameDataLabel.AutoSize = true;
-            this.CharacterNameDataLabel.Location = new System.Drawing.Point(133, 0);
-            this.CharacterNameDataLabel.Name = "CharacterNameDataLabel";
-            this.CharacterNameDataLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterNameDataLabel.TabIndex = 1;
-            this.CharacterNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterPower1DataLabel.AutoSize = true;
+            this.CharacterPower1DataLabel.Location = new System.Drawing.Point(238, 336);
+            this.CharacterPower1DataLabel.Name = "CharacterPower1DataLabel";
+            this.CharacterPower1DataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterPower1DataLabel.TabIndex = 23;
+            this.CharacterPower1DataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CharacterNameLabel
             // 
@@ -849,24 +744,38 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CharacterNameLabel.AutoSize = true;
+            this.CharaterTableLayoutPanel.SetColumnSpan(this.CharacterNameLabel, 2);
             this.CharacterNameLabel.Location = new System.Drawing.Point(3, 0);
             this.CharacterNameLabel.Name = "CharacterNameLabel";
-            this.CharacterNameLabel.Size = new System.Drawing.Size(124, 64);
+            this.CharacterNameLabel.Size = new System.Drawing.Size(464, 42);
             this.CharacterNameLabel.TabIndex = 0;
             this.CharacterNameLabel.Text = "Hero Name";
             this.CharacterNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterAgiligyDataLabel
+            // CharacterFirstNameLabel
             // 
-            this.CharacterAgiligyDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterFirstNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterAgiligyDataLabel.AutoSize = true;
-            this.CharacterAgiligyDataLabel.Location = new System.Drawing.Point(393, 0);
-            this.CharacterAgiligyDataLabel.Name = "CharacterAgiligyDataLabel";
-            this.CharacterAgiligyDataLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterAgiligyDataLabel.TabIndex = 3;
-            this.CharacterAgiligyDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterFirstNameLabel.AutoSize = true;
+            this.CharacterFirstNameLabel.Location = new System.Drawing.Point(3, 42);
+            this.CharacterFirstNameLabel.Name = "CharacterFirstNameLabel";
+            this.CharacterFirstNameLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterFirstNameLabel.TabIndex = 4;
+            this.CharacterFirstNameLabel.Text = "First Name";
+            this.CharacterFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterFirstNameDataLabel
+            // 
+            this.CharacterFirstNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterFirstNameDataLabel.AutoSize = true;
+            this.CharacterFirstNameDataLabel.Location = new System.Drawing.Point(238, 42);
+            this.CharacterFirstNameDataLabel.Name = "CharacterFirstNameDataLabel";
+            this.CharacterFirstNameDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterFirstNameDataLabel.TabIndex = 5;
+            this.CharacterFirstNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CharacterAgiligyLabel
             // 
@@ -874,37 +783,38 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CharacterAgiligyLabel.AutoSize = true;
-            this.CharacterAgiligyLabel.Location = new System.Drawing.Point(263, 0);
+            this.CharacterAgiligyLabel.Location = new System.Drawing.Point(473, 126);
             this.CharacterAgiligyLabel.Name = "CharacterAgiligyLabel";
-            this.CharacterAgiligyLabel.Size = new System.Drawing.Size(124, 64);
+            this.CharacterAgiligyLabel.Size = new System.Drawing.Size(229, 42);
             this.CharacterAgiligyLabel.TabIndex = 2;
             this.CharacterAgiligyLabel.Text = "Agility";
             this.CharacterAgiligyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterIntuitionLabel
+            // CharacterLastNameLabel
             // 
-            this.CharacterIntuitionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterLastNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterIntuitionLabel.AutoSize = true;
-            this.CharacterIntuitionLabel.Location = new System.Drawing.Point(523, 0);
-            this.CharacterIntuitionLabel.Name = "CharacterIntuitionLabel";
-            this.CharacterIntuitionLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterIntuitionLabel.TabIndex = 16;
-            this.CharacterIntuitionLabel.Text = "Intuition";
-            this.CharacterIntuitionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterLastNameLabel.AutoSize = true;
+            this.CharacterLastNameLabel.Location = new System.Drawing.Point(473, 42);
+            this.CharacterLastNameLabel.Name = "CharacterLastNameLabel";
+            this.CharacterLastNameLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterLastNameLabel.TabIndex = 8;
+            this.CharacterLastNameLabel.Text = "Last Name";
+            this.CharacterLastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterIntuitionDataLabel
+            // CharacterPopularLabel
             // 
-            this.CharacterIntuitionDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterPopularLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterIntuitionDataLabel.AutoSize = true;
-            this.CharacterIntuitionDataLabel.Location = new System.Drawing.Point(653, 0);
-            this.CharacterIntuitionDataLabel.Name = "CharacterIntuitionDataLabel";
-            this.CharacterIntuitionDataLabel.Size = new System.Drawing.Size(130, 64);
-            this.CharacterIntuitionDataLabel.TabIndex = 17;
-            this.CharacterIntuitionDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterPopularLabel.AutoSize = true;
+            this.CharacterPopularLabel.Location = new System.Drawing.Point(473, 252);
+            this.CharacterPopularLabel.Name = "CharacterPopularLabel";
+            this.CharacterPopularLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterPopularLabel.TabIndex = 20;
+            this.CharacterPopularLabel.Text = "Popularity";
+            this.CharacterPopularLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CharacterPsycheLabel
             // 
@@ -912,9 +822,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CharacterPsycheLabel.AutoSize = true;
-            this.CharacterPsycheLabel.Location = new System.Drawing.Point(523, 64);
+            this.CharacterPsycheLabel.Location = new System.Drawing.Point(3, 252);
             this.CharacterPsycheLabel.Name = "CharacterPsycheLabel";
-            this.CharacterPsycheLabel.Size = new System.Drawing.Size(124, 64);
+            this.CharacterPsycheLabel.Size = new System.Drawing.Size(229, 42);
             this.CharacterPsycheLabel.TabIndex = 18;
             this.CharacterPsycheLabel.Text = "Psyche";
             this.CharacterPsycheLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -925,61 +835,100 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CharacterPsycheDataLabel.AutoSize = true;
-            this.CharacterPsycheDataLabel.Location = new System.Drawing.Point(653, 64);
+            this.CharacterPsycheDataLabel.Location = new System.Drawing.Point(238, 252);
             this.CharacterPsycheDataLabel.Name = "CharacterPsycheDataLabel";
-            this.CharacterPsycheDataLabel.Size = new System.Drawing.Size(130, 64);
+            this.CharacterPsycheDataLabel.Size = new System.Drawing.Size(229, 42);
             this.CharacterPsycheDataLabel.TabIndex = 19;
             this.CharacterPsycheDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterPopularLabel
+            // CharacterIntuitionLabel
             // 
-            this.CharacterPopularLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterIntuitionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterPopularLabel.AutoSize = true;
-            this.CharacterPopularLabel.Location = new System.Drawing.Point(523, 128);
-            this.CharacterPopularLabel.Name = "CharacterPopularLabel";
-            this.CharacterPopularLabel.Size = new System.Drawing.Size(124, 64);
-            this.CharacterPopularLabel.TabIndex = 20;
-            this.CharacterPopularLabel.Text = "Popularity";
-            this.CharacterPopularLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterIntuitionLabel.AutoSize = true;
+            this.CharacterIntuitionLabel.Location = new System.Drawing.Point(473, 210);
+            this.CharacterIntuitionLabel.Name = "CharacterIntuitionLabel";
+            this.CharacterIntuitionLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterIntuitionLabel.TabIndex = 16;
+            this.CharacterIntuitionLabel.Text = "Intuition";
+            this.CharacterIntuitionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterPowerLabel
+            // CharacterReasonLabel
             // 
-            this.CharacterPowerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterReasonLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterPowerLabel.AutoSize = true;
-            this.CharacterPowerLabel.Location = new System.Drawing.Point(523, 192);
-            this.CharacterPowerLabel.Name = "CharacterPowerLabel";
-            this.CharacterPowerLabel.Size = new System.Drawing.Size(124, 66);
-            this.CharacterPowerLabel.TabIndex = 21;
-            this.CharacterPowerLabel.Text = "Power";
-            this.CharacterPowerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterReasonLabel.AutoSize = true;
+            this.CharacterReasonLabel.Location = new System.Drawing.Point(3, 210);
+            this.CharacterReasonLabel.Name = "CharacterReasonLabel";
+            this.CharacterReasonLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterReasonLabel.TabIndex = 14;
+            this.CharacterReasonLabel.Text = "Reason";
+            this.CharacterReasonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterPopularDataLabel
+            // CharacterReasonDataLabel
             // 
-            this.CharacterPopularDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterReasonDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterPopularDataLabel.AutoSize = true;
-            this.CharacterPopularDataLabel.Location = new System.Drawing.Point(653, 128);
-            this.CharacterPopularDataLabel.Name = "CharacterPopularDataLabel";
-            this.CharacterPopularDataLabel.Size = new System.Drawing.Size(130, 64);
-            this.CharacterPopularDataLabel.TabIndex = 22;
-            this.CharacterPopularDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterReasonDataLabel.AutoSize = true;
+            this.CharacterReasonDataLabel.Location = new System.Drawing.Point(238, 210);
+            this.CharacterReasonDataLabel.Name = "CharacterReasonDataLabel";
+            this.CharacterReasonDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterReasonDataLabel.TabIndex = 15;
+            this.CharacterReasonDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CharacterPowerDataLabel
+            // CharacterEnduranceLabel
             // 
-            this.CharacterPowerDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CharacterEnduranceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CharacterPowerDataLabel.AutoSize = true;
-            this.CharacterPowerDataLabel.Location = new System.Drawing.Point(653, 192);
-            this.CharacterPowerDataLabel.Name = "CharacterPowerDataLabel";
-            this.CharacterPowerDataLabel.Size = new System.Drawing.Size(130, 66);
-            this.CharacterPowerDataLabel.TabIndex = 23;
-            this.CharacterPowerDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterEnduranceLabel.AutoSize = true;
+            this.CharacterEnduranceLabel.Location = new System.Drawing.Point(473, 168);
+            this.CharacterEnduranceLabel.Name = "CharacterEnduranceLabel";
+            this.CharacterEnduranceLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterEnduranceLabel.TabIndex = 10;
+            this.CharacterEnduranceLabel.Text = "Endurance";
+            this.CharacterEnduranceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterStrengthLabel
+            // 
+            this.CharacterStrengthLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterStrengthLabel.AutoSize = true;
+            this.CharacterStrengthLabel.Location = new System.Drawing.Point(3, 168);
+            this.CharacterStrengthLabel.Name = "CharacterStrengthLabel";
+            this.CharacterStrengthLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterStrengthLabel.TabIndex = 6;
+            this.CharacterStrengthLabel.Text = "Strength";
+            this.CharacterStrengthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterStrengthDataLabel
+            // 
+            this.CharacterStrengthDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterStrengthDataLabel.AutoSize = true;
+            this.CharacterStrengthDataLabel.Location = new System.Drawing.Point(238, 168);
+            this.CharacterStrengthDataLabel.Name = "CharacterStrengthDataLabel";
+            this.CharacterStrengthDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterStrengthDataLabel.TabIndex = 7;
+            this.CharacterStrengthDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterFightingLabel
+            // 
+            this.CharacterFightingLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterFightingLabel.AutoSize = true;
+            this.CharacterFightingLabel.Location = new System.Drawing.Point(3, 126);
+            this.CharacterFightingLabel.Name = "CharacterFightingLabel";
+            this.CharacterFightingLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterFightingLabel.TabIndex = 12;
+            this.CharacterFightingLabel.Text = "Fighting";
+            this.CharacterFightingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HeroToolStrip
             // 
@@ -1120,7 +1069,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(628, 467);
+            this.NextButton.Location = new System.Drawing.Point(637, 647);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(142, 56);
             this.NextButton.TabIndex = 1;
@@ -1130,7 +1079,7 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(4, 467);
+            this.BackButton.Location = new System.Drawing.Point(13, 647);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(142, 56);
             this.BackButton.TabIndex = 2;
@@ -1141,6 +1090,184 @@
             // CharacterOpenFileDialog
             // 
             this.CharacterOpenFileDialog.FileName = "openFileDialog1";
+            // 
+            // AbilitiesTitleLabel
+            // 
+            this.AbilitiesTitleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AbilitiesTitleLabel.AutoSize = true;
+            this.AbilitiesTitleLabel.BackColor = System.Drawing.Color.LightGray;
+            this.CharaterTableLayoutPanel.SetColumnSpan(this.AbilitiesTitleLabel, 4);
+            this.AbilitiesTitleLabel.Location = new System.Drawing.Point(3, 84);
+            this.AbilitiesTitleLabel.Name = "AbilitiesTitleLabel";
+            this.AbilitiesTitleLabel.Size = new System.Drawing.Size(934, 42);
+            this.AbilitiesTitleLabel.TabIndex = 24;
+            this.AbilitiesTitleLabel.Text = "Abilities";
+            this.AbilitiesTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PowerTitleLabel
+            // 
+            this.PowerTitleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PowerTitleLabel.AutoSize = true;
+            this.PowerTitleLabel.BackColor = System.Drawing.Color.LightGray;
+            this.CharaterTableLayoutPanel.SetColumnSpan(this.PowerTitleLabel, 4);
+            this.PowerTitleLabel.Location = new System.Drawing.Point(3, 294);
+            this.PowerTitleLabel.Name = "PowerTitleLabel";
+            this.PowerTitleLabel.Size = new System.Drawing.Size(934, 42);
+            this.PowerTitleLabel.TabIndex = 25;
+            this.PowerTitleLabel.Text = "Power";
+            this.PowerTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPower2Label
+            // 
+            this.CharacterPower2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPower2Label.AutoSize = true;
+            this.CharacterPower2Label.Location = new System.Drawing.Point(473, 336);
+            this.CharacterPower2Label.Name = "CharacterPower2Label";
+            this.CharacterPower2Label.Size = new System.Drawing.Size(229, 42);
+            this.CharacterPower2Label.TabIndex = 26;
+            this.CharacterPower2Label.Text = "Power 2";
+            this.CharacterPower2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPower3Label
+            // 
+            this.CharacterPower3Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPower3Label.AutoSize = true;
+            this.CharacterPower3Label.Location = new System.Drawing.Point(3, 378);
+            this.CharacterPower3Label.Name = "CharacterPower3Label";
+            this.CharacterPower3Label.Size = new System.Drawing.Size(229, 43);
+            this.CharacterPower3Label.TabIndex = 28;
+            this.CharacterPower3Label.Text = "Power 3";
+            this.CharacterPower3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPower3DataLabel
+            // 
+            this.CharacterPower3DataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPower3DataLabel.AutoSize = true;
+            this.CharacterPower3DataLabel.Location = new System.Drawing.Point(238, 378);
+            this.CharacterPower3DataLabel.Name = "CharacterPower3DataLabel";
+            this.CharacterPower3DataLabel.Size = new System.Drawing.Size(229, 43);
+            this.CharacterPower3DataLabel.TabIndex = 29;
+            this.CharacterPower3DataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPower4Label
+            // 
+            this.CharacterPower4Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPower4Label.AutoSize = true;
+            this.CharacterPower4Label.Location = new System.Drawing.Point(473, 378);
+            this.CharacterPower4Label.Name = "CharacterPower4Label";
+            this.CharacterPower4Label.Size = new System.Drawing.Size(229, 43);
+            this.CharacterPower4Label.TabIndex = 30;
+            this.CharacterPower4Label.Text = "Power 4";
+            this.CharacterPower4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPower4DataLabel
+            // 
+            this.CharacterPower4DataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPower4DataLabel.AutoSize = true;
+            this.CharacterPower4DataLabel.Location = new System.Drawing.Point(708, 378);
+            this.CharacterPower4DataLabel.Name = "CharacterPower4DataLabel";
+            this.CharacterPower4DataLabel.Size = new System.Drawing.Size(229, 43);
+            this.CharacterPower4DataLabel.TabIndex = 31;
+            this.CharacterPower4DataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPower2DataLabel
+            // 
+            this.CharacterPower2DataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPower2DataLabel.AutoSize = true;
+            this.CharacterPower2DataLabel.Location = new System.Drawing.Point(708, 336);
+            this.CharacterPower2DataLabel.Name = "CharacterPower2DataLabel";
+            this.CharacterPower2DataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterPower2DataLabel.TabIndex = 27;
+            this.CharacterPower2DataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterLastNameDataLabel
+            // 
+            this.CharacterLastNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterLastNameDataLabel.AutoSize = true;
+            this.CharacterLastNameDataLabel.Location = new System.Drawing.Point(708, 42);
+            this.CharacterLastNameDataLabel.Name = "CharacterLastNameDataLabel";
+            this.CharacterLastNameDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterLastNameDataLabel.TabIndex = 9;
+            this.CharacterLastNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterAgiligyDataLabel
+            // 
+            this.CharacterAgiligyDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterAgiligyDataLabel.AutoSize = true;
+            this.CharacterAgiligyDataLabel.Location = new System.Drawing.Point(708, 126);
+            this.CharacterAgiligyDataLabel.Name = "CharacterAgiligyDataLabel";
+            this.CharacterAgiligyDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterAgiligyDataLabel.TabIndex = 3;
+            this.CharacterAgiligyDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterEnduranceDataLabel
+            // 
+            this.CharacterEnduranceDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterEnduranceDataLabel.AutoSize = true;
+            this.CharacterEnduranceDataLabel.Location = new System.Drawing.Point(708, 168);
+            this.CharacterEnduranceDataLabel.Name = "CharacterEnduranceDataLabel";
+            this.CharacterEnduranceDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterEnduranceDataLabel.TabIndex = 11;
+            this.CharacterEnduranceDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterIntuitionDataLabel
+            // 
+            this.CharacterIntuitionDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterIntuitionDataLabel.AutoSize = true;
+            this.CharacterIntuitionDataLabel.Location = new System.Drawing.Point(708, 210);
+            this.CharacterIntuitionDataLabel.Name = "CharacterIntuitionDataLabel";
+            this.CharacterIntuitionDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterIntuitionDataLabel.TabIndex = 17;
+            this.CharacterIntuitionDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterPopularDataLabel
+            // 
+            this.CharacterPopularDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterPopularDataLabel.AutoSize = true;
+            this.CharacterPopularDataLabel.Location = new System.Drawing.Point(708, 252);
+            this.CharacterPopularDataLabel.Name = "CharacterPopularDataLabel";
+            this.CharacterPopularDataLabel.Size = new System.Drawing.Size(229, 42);
+            this.CharacterPopularDataLabel.TabIndex = 22;
+            this.CharacterPopularDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CharacterNameDataLabel
+            // 
+            this.CharacterNameDataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CharacterNameDataLabel.AutoSize = true;
+            this.CharaterTableLayoutPanel.SetColumnSpan(this.CharacterNameDataLabel, 2);
+            this.CharacterNameDataLabel.Location = new System.Drawing.Point(473, 0);
+            this.CharacterNameDataLabel.Name = "CharacterNameDataLabel";
+            this.CharacterNameDataLabel.Size = new System.Drawing.Size(464, 42);
+            this.CharacterNameDataLabel.TabIndex = 1;
+            this.CharacterNameDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HeroGenerator
             // 
@@ -1239,26 +1366,34 @@
         private System.Windows.Forms.Label CharacterNameLabel;
         private System.Windows.Forms.Label CharacterReasonDataLabel;
         private System.Windows.Forms.Label CharacterReasonLabel;
-        private System.Windows.Forms.Label CharacterFightingLabelLabel;
+        private System.Windows.Forms.Label CharacterFightingDataLabel;
         private System.Windows.Forms.Label CharacterFightingLabel;
-        private System.Windows.Forms.Label CharacterEnduranceDataLabel;
         private System.Windows.Forms.Label CharacterEnduranceLabel;
-        private System.Windows.Forms.Label CharacterLastNameDataLabel;
         private System.Windows.Forms.Label CharacterLastNameLabel;
         private System.Windows.Forms.Label CharacterStrengthDataLabel;
         private System.Windows.Forms.Label CharacterStrengthLabel;
         private System.Windows.Forms.Label CharacterFirstNameDataLabel;
         private System.Windows.Forms.Label CharacterFirstNameLabel;
-        private System.Windows.Forms.Label CharacterAgiligyDataLabel;
         private System.Windows.Forms.Label CharacterAgiligyLabel;
-        private System.Windows.Forms.Label CharacterNameDataLabel;
         private System.Windows.Forms.Label CharacterIntuitionLabel;
-        private System.Windows.Forms.Label CharacterIntuitionDataLabel;
         private System.Windows.Forms.Label CharacterPsycheLabel;
         private System.Windows.Forms.Label CharacterPsycheDataLabel;
         private System.Windows.Forms.Label CharacterPopularLabel;
-        private System.Windows.Forms.Label CharacterPowerLabel;
+        private System.Windows.Forms.Label CharacterPower1Label;
+        private System.Windows.Forms.Label CharacterPower1DataLabel;
+        private System.Windows.Forms.Label PowerTitleLabel;
+        private System.Windows.Forms.Label AbilitiesTitleLabel;
+        private System.Windows.Forms.Label CharacterPower4Label;
+        private System.Windows.Forms.Label CharacterPower3Label;
+        private System.Windows.Forms.Label CharacterPower3DataLabel;
+        private System.Windows.Forms.Label CharacterPower2Label;
         private System.Windows.Forms.Label CharacterPopularDataLabel;
-        private System.Windows.Forms.Label CharacterPowerDataLabel;
+        private System.Windows.Forms.Label CharacterIntuitionDataLabel;
+        private System.Windows.Forms.Label CharacterEnduranceDataLabel;
+        private System.Windows.Forms.Label CharacterAgiligyDataLabel;
+        private System.Windows.Forms.Label CharacterLastNameDataLabel;
+        private System.Windows.Forms.Label CharacterPower2DataLabel;
+        private System.Windows.Forms.Label CharacterPower4DataLabel;
+        private System.Windows.Forms.Label CharacterNameDataLabel;
     }
 }
